@@ -39,8 +39,8 @@ public class TaskController {
 	}
 	
 //	update task
-	@RequestMapping(method=RequestMethod.PUT, value="/list/{id}")
-	public void updateTask(@RequestBody Task task, @PathVariable Long id) {
+	@RequestMapping(method=RequestMethod.PUT, value="/list")
+	public void updateTask(@RequestBody Task task) {
 		taskRepository.save(task);
 	}
 	

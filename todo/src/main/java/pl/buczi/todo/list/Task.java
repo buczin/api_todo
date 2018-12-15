@@ -17,19 +17,25 @@ public class Task {
 	private String description;
 	private Date date;
 	
-	public Task(Long id, String name, String description, Date date) {
+	public Task(String name, String description, Date date) {
 		super();
-		this.id = id;
 		this.name = name;
 		this.description = description;
 		this.date = date;
 	}
 	
+	public Task(String name, String description) {
+		super();
+		this.name = name;
+		this.description = description;
+	}
+	
+	public Task() {
+		super();
+	}
+	
 	public Long getId() {
 		return id;
-	}
-	public void setId(Long id) {
-		this.id = id;
 	}
 	public String getName() {
 		return name;
@@ -51,5 +57,4 @@ public class Task {
 	}
 	
 	
-
 }
