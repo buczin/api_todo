@@ -1,10 +1,8 @@
 package pl.buczi.todo.list;
 
-public class TaskRepository {
+import org.springframework.data.repository.CrudRepository;
 
-	public Iterable<Task> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+public interface TaskRepository extends CrudRepository<Task, Long> {
+
 
 }

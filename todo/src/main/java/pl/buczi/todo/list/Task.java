@@ -16,9 +16,6 @@ public class Task {
 	private String name;
 	private String description;
 	private Date date;
-	public Long getId() {
-		return id;
-	}
 	
 	public Task(Long id, String name, String description, Date date) {
 		super();
@@ -28,6 +25,9 @@ public class Task {
 		this.date = date;
 	}
 	
+	public Long getId() {
+		return id;
+	}
 	public void setId(Long id) {
 		this.id = id;
 	}
